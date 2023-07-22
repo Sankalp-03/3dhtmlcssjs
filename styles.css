@@ -1,0 +1,479 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /* In case of box-sizing border box the border and padding are included in the width and height of object */
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    /* position is relative to its normal position and any overflowing object is hidden */
+    position: relative;
+    overflow: hidden; 
+    background-color: #1137ca;
+}
+#page1{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+@font-face {
+    font-family: my-font;
+    src: url(./jost-variable.ttf);
+}
+@font-face {
+    font-family: my-font-2;
+    src: url(./KFOlCnqEu92Fr1MmEU9fBBc4\ \(1\).ttf);
+}
+@font-face {
+    font-family: my-font-3;
+    src: url(./KFOmCnqEu92Fr1Mu4mxK\ \(1\).ttf);
+}
+#page1>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* Object-fit property tells how an img/video should be resized to fit its container */
+}
+#page1>nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    position: absolute;
+    height: 10vh;
+    width: 100vw;
+}
+#page1>nav>img{
+    margin-top: -1.7vw;
+    width: 9%;
+}
+#right-nav>button{
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #0b48ed;
+    border: 1px solid #fff;
+    color: #fff;
+    font-family: my-font;
+    font-size: 15px;
+}
+.bottom-page-1{
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    height: 35vh;
+    width: 50vw;
+    /* background-color: red; */
+}
+.bottom-page-1>h1{
+    font-family: my-font;
+    font-size: 5vw;
+    font-weight: 100;
+    /* Specifies the height of a line */
+    line-height: 1;
+    color: #fff;
+}
+.bottom-page-1-inner{
+    position: absolute;
+    bottom: 0%;
+    height: 35%;
+    width:100%;
+    /* background-color: yellow; */
+}
+.bottom-page-1-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    font-family: my-font;
+}
+.bottom-page-1-inner>button{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 50px;
+    background-color: #fff;
+    font-weight: 500;
+    color: #0b48ed;
+    font-size: 16px;
+    font-family: my-font-2;
+}
+.bottom-page-1-inner>h4{
+    font-size: 1.2vw;
+    font-weight: 100;
+    color: #fff;
+}
+#page2{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    font-family: my-font;
+    height: 100vh;
+    width: 100vw;
+    padding: 0vw 8vw;
+    /* background-color: red; */
+    position: relative;
+    color: #fff;
+    background-color: #0a3cce;
+}
+#page2>h2{
+    margin-bottom: 3vw;
+    font-weight: 100;
+}
+#page2>h1{
+    font-weight: 100;
+    line-height: 1.3;
+    width: 90%;
+    font-size: 4vw;
+    color:#dadada69
+}
+#page3{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: red;
+}
+#page3>canvas{
+    /* height take the space from screen even selector element is empty 
+    but max-height set the of maximum limit of height on selector element but 
+    no space will take until no content pushed inside. */
+    max-height: 100vh;
+    max-width: 100vw;
+    position: relative;
+}
+#page4{
+    /* Since it only contains normal text and not an special div's hence we may use just display:flex to center this */
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #1137ca;
+    font-family: my-font;
+}
+#page4>h3{
+    margin-left: 15vw;
+    margin-bottom: 2vw;
+    font-weight: 100;
+    color: #fff;
+}
+#page4>h1{
+    margin-left: 15vw;
+    width: 70%;
+    font-size: 3vw;
+    font-weight: 100;
+    color: #ffffff81;
+}
+#page5{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#page5>canvas{
+    position: relative;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+#page6{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0a3cce;
+    font-family: my-font;
+}
+#page6>h3{
+    margin-left: 15vw;
+    font-weight: 100;
+    color: #fff;
+    margin-bottom: 2vw;
+}
+#page6>h1{
+    margin-left: 15vw;
+    font-size: 3vw;
+    width: 70%;
+    font-weight: 100;
+    color: #ffffff70;
+}
+#page7{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0a3cce;
+}
+#page7>canvas{
+    position: relative;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+#page7-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+    height: 30vw;
+    width: 30vw;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+#page7-circle-inner{
+    height: 70%;
+    width: 70%;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%
+}
+#page8{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0a3cce;
+}
+#page8>video{
+    height: 100%;
+    width: 100%;
+    /* covers the whole container, images crop off from left-right but don't stretch/skew */
+    object-fit: cover; 
+}
+#page8-bottom{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: my-font;
+}
+#page8-bottom>h1{
+    color: #fff;
+    margin-bottom: 2vw;
+    font-size: 5vw;
+    font-weight: 100;
+}
+#page8-bottom>button{
+    padding: 20px 30px;
+    border: none;
+    border-radius: 50px;
+    color: #0a3cce;
+    background-color: #fff;
+}
+#page9{
+    display: flex;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0a3cce;
+}
+#left9{
+    position: relative;
+    height: 100%;
+    width: 40%;
+}
+#left9>h1{
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    transform: translateY(-50%);
+    font-size: 5vw;
+    font-weight: 100;
+    font-family: my-font;
+    color: #fff;
+    line-height: 1;
+}
+#right9{
+    height: 100%;
+    width: 60%;
+    position: relative;
+}
+#right9-center{
+    height: 50%;
+    width: 85%;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    background-image: url(https://thisismagma.com/wp-content/uploads/2023/04/magma.wp2.cubdev.com-home-1.jpeg);
+    background-size: cover;
+}
+#page10{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0a3cce;
+}
+#right10{
+    height: 100%;
+    width: 60%;
+    position: relative;
+    left: 40%;
+}
+.right10-inner{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    height: 33.3%;
+    width: 100%;
+    font-family: my-font;
+    color: #fff;
+}
+.right10-inner>h1{
+    font-size: 2vw;
+}
+.right10-inner>p{
+    margin-top: 2vw;
+    font-size: 1.3vw;
+    width: 80%;
+}
+#page11{
+    position: relative;
+    height: 110vh;
+    width: 100vw;
+    background-color: #fff;
+    font-family: my-font;
+}
+#page11>h1{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    font-size: 4vw;
+    color: #000;
+    font-weight: 100;
+}
+.page11-inner{
+    display: flex;
+    top: 18%;
+    position: relative;
+    margin-bottom: 2vw;
+    height: 24%;
+    width: 100%;
+}
+.left11{
+    position: relative;
+    height: 100%;
+    width: 40%;
+    left: 5%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.left11>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.right11{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    left: 50%;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    color: #000;
+    width: 35%;
+}
+.right11>h4{
+    font-weight: 100;
+}
+.right11>h1{
+    font-size: 1.3vw;
+}
+#page12{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #02268e;
+}
+#page12-inner{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    color: #fff;
+    font-family: my-font;
+}
+#page12-inner>h1{
+    font-size: 5vw;
+    font-weight: 100;
+}
+#page12-inner>p{
+    font-size: 1.3vw;
+}
+#page13{
+    position: relative;
+    height: 50vh;
+    width: 100vw;
+    background-color: #000;
+    color: #fff;
+    font-family: my-font;
+    padding: 5vw 10vw;
+}
+#page13>h1{
+    font-size: 5vw;
+    line-height: 1;
+    font-weight: 100;
+}
+#page13>button{
+    padding: 18px 30px;
+    margin-top: 2vw;
+    border: none;
+    border-radius: 50px;
+    background-color: #0a3cce;
+    color: #fff;
+}
+#page14{
+    position: relative;
+    height: 60vh;
+    width: 100vw;
+    background-color: #000;
+}
+#page14-inner{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 5vw;
+    height: 33.3%;
+    width: 100%;
+    /* background-color: green; */
+    color: #fff;
+    font-family: my-font;
+    border-top: 0.5px solid #ffffff5c;
+    border-bottom: 0.5px solid #ffffff48;
+}
+#page14-inner>i{
+    font-weight: 100;
+    font-size: 2.4vw;
+    position: relative;
+    z-index: 9999999;
+}
+#page14-inner>h1{
+    font-size: 3vw;
+    font-weight: 100;
+    position: relative;
+    z-index: 9999999;
+}
+.center14{
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all ease .5s;
+    background-color: #0a3cce;
+}
+#page14-inner:hover .center14{
+    height: 100%;
+}
